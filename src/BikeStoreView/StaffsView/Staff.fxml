@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="484.0" prefWidth="706.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="BikeStoreView.StaffsView.StaffController">
+    <children>
+        <Label layoutX="75.0" layoutY="72.0" text="staff id" />
+        <Label layoutX="61.0" layoutY="106.0" text="first name" />
+        <Label layoutX="63.0" layoutY="141.0" text="last name" />   
+        <Label layoutX="82.0" layoutY="175.0" text="email" />
+        <Label layoutX="395.0" layoutY="71.0" text="phone" />
+        <Label layoutX="399.0" layoutY="104.0" text="active" />
+        <Label layoutX="391.0" layoutY="138.0" text="store id" />
+        <Label layoutX="370.0" layoutY="175.0" text="manager id" />
+      
+        <TextField fx:id="staffIdInput" layoutX="131.0" layoutY="67.0" />
+        <TextField fx:id="firstNameInput" layoutX="131.0" layoutY="102.0" />
+        <TextField fx:id="lastNameInput" layoutX="131.0" layoutY="137.0" />
+        <TextField fx:id="emailInput" layoutX="131.0" layoutY="172.0" />
+        <TextField fx:id="phoneInput" layoutX="453.0" layoutY="67.0" />
+        <TextField fx:id="activeInput" layoutX="454.0" layoutY="100.0" />
+        <TextField fx:id="storeIdInput" layoutX="455.0" layoutY="137.0" />
+        <TextField fx:id="manageIdInput" layoutX="455.0" layoutY="172.0" />
+        
+        
+        
+        <TableView fx:id="staffTable" layoutX="5.0" layoutY="265.0" prefHeight="208.0" prefWidth="697.0">
+            <columns>
+                <TableColumn fx:id="staffIdCol" prefWidth="53.0" text="staff id" />
+                <TableColumn fx:id="firstNameCol" prefWidth="77.0" text="first name" />
+                <TableColumn fx:id="lastNameCol" prefWidth="77.0" text="last name" />
+                <TableColumn fx:id="emailCol" prefWidth="152.0" text="email" />
+                <TableColumn fx:id="phoneCol" prefWidth="110.0" text="phone" />
+                <TableColumn fx:id="activeCol" prefWidth="57.0" text="active" />
+                <TableColumn fx:id="storeCol" prefWidth="56.0" text="store id" />
+                <TableColumn fx:id="manageCol" prefWidth="81.0" text="manager id" />
+            </columns>
+        </TableView>
+        <Button fx:id="btnAdd" layoutX="315.0" layoutY="221.0" mnemonicParsing="false" onAction="#handleAdd" text="Add" />
+        <Button fx:id="btnDelete" layoutX="455.0" layoutY="221.0" mnemonicParsing="false" onAction="#handleDelete" text="Delete" />
+        <Button fx:id="btnUpdate" layoutX="373.0" layoutY="221.0" mnemonicParsing="false" onAction="#handleUpdate" text="Update" />
+        
+        <Label layoutX="322.0" layoutY="9.0" text="STAFFS">
+            <font>
+                <Font size="22.0" />
+            </font>
+        </Label>
+      <Button fx:id="btnReset" layoutX="630.0" layoutY="25.0" mnemonicParsing="false" onAction="#handleReset" text="Reset" />
+      <Button fx:id="btnLoad" layoutX="246.0" layoutY="221.0" mnemonicParsing="false" onAction="#handleLoad" text="Load" />
+      <Label fx:id="alert" layoutX="128.0" layoutY="38.0" prefHeight="17.0" prefWidth="459.0" />
+          
+    </children>
+</AnchorPane>

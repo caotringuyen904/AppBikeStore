@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+    <?import javafx.scene.control.ListView?>
+    <?import javafx.scene.layout.AnchorPane?>
+
+    <AnchorPane id="AnchorPane" prefHeight="600.0" prefWidth="1000.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="BikeStoreView.ManageView.ManageController" >
+       <children>
+          <ListView fx:id="listViewTable" layoutX="7.0" layoutY="39.0" prefHeight="498.0" prefWidth="103.0" />
+          <AnchorPane fx:id="itemDetailsAnchorPane" layoutX="114.0" layoutY="41.0" prefHeight="492.0" prefWidth="658.0"  />
+       </children>
+    </AnchorPane>
